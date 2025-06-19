@@ -1,48 +1,46 @@
-<?php
-if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/intranet/public/company/.left.menu.php");
+<?
 $aMenuLinks = Array(
 	Array(
-		GetMessage("COMPANY_MENU_EMPLOYEES"),
-		SITE_DIR."company/index.php",
-		Array(),
-		Array(),
-		""
+		"Поиск сотрудника", 
+		"/company/index.php", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
-		GetMessage("COMPANY_MENU_STRUCTURE"),
-		SITE_DIR."hr/structure/",
-		Array(),
-		Array(),
-		""
+		"Структура компании", 
+		"/hr/structure/", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
-		GetMessage("COMPANY_MENU_EVENTS"),
-		SITE_DIR."company/events.php",
-		Array(),
-		Array(),
-		"CBXFeatures::IsFeatureEnabled('StaffChanges')"
+		"Кадровые изменения", 
+		"/company/events.php", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('StaffChanges')" 
 	),
 	Array(
-		GetMessage("COMPANY_MENU_LEADERS"),
-		SITE_DIR."company/leaders.php",
-		Array(),
-		Array(),
-		""
+		"Доска почета", 
+		"/company/leaders.php", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
-		GetMessage("COMPANY_MENU_BIRTHDAYS"),
-		SITE_DIR."company/birthdays.php",
-		Array(),
-		Array(),
-		""
+		"Дни рождения", 
+		"/company/birthdays.php", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
-		GetMessage("COMPANY_MENU_GALLERY"),
-		SITE_DIR."company/gallery/",
+		"Фотогалерея", 
+		"/company/gallery/", 
 		Array(), 
 		Array(), 
 		"CBXFeatures::IsFeatureEnabled('Gallery')" 
-	),
+	)
 );
 ?>

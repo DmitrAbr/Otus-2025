@@ -1,0 +1,102 @@
+OTUS - 2025-06-19 10:10:36 - HOST: co58172.tw1.ru - UNCAUGHT_EXCEPTION = {text}
+OTUS - 2025-06-19 10:11:10 - HOST: co58172.tw1.ru - UNCAUGHT_EXCEPTION = {text}
+OTUS - 2025-06-19 10:12:31 - HOST: co58172.tw1.ru - UNCAUGHT_EXCEPTION = [ErrorException] E_WARNING
+String offset cast occurred (0)
+/home/c/co58172/www/public_html/bitrix/modules/main/include.php:1
+#0: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog_before.php:19
+#1: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog.php:10
+#2: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/header.php:1
+#3: require(string)
+	/home/c/co58172/www/public_html/company/personal.php:8
+#4: include_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/urlrewrite.php:128
+#5: include_once(string)
+	/home/c/co58172/www/public_html/bitrix/urlrewrite.php:2
+----------
+
+2025-06-19 10:21:12 - Host: co58172.tw1.ru - UNCAUGHT_EXCEPTION - [ErrorException] E_WARNING
+String offset cast occurred (0)
+/home/c/co58172/www/public_html/bitrix/modules/main/include.php:1
+#0: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog_before.php:19
+#1: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog.php:10
+#2: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/header.php:1
+#3: require(string)
+	/home/c/co58172/www/public_html/company/personal.php:8
+#4: include_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/urlrewrite.php:128
+#5: include_once(string)
+	/home/c/co58172/www/public_html/bitrix/urlrewrite.php:2
+----------
+
+OTUS - 2025-06-19 10:22:59 - HOST: co58172.tw1.ru - UNCAUGHT_EXCEPTION = [ErrorException] E_WARNING
+String offset cast occurred (0)
+/home/c/co58172/www/public_html/bitrix/modules/main/include.php:1
+#0: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog_before.php:19
+#1: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog.php:10
+#2: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/header.php:1
+#3: require(string)
+	/home/c/co58172/www/public_html/company/personal.php:8
+#4: include_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/urlrewrite.php:128
+#5: include_once(string)
+	/home/c/co58172/www/public_html/bitrix/urlrewrite.php:2
+----------
+
+OTUS - 2025-06-19 10:23:05 - HOST: co58172.tw1.ru - UNCAUGHT_EXCEPTION = [ErrorException] E_WARNING
+String offset cast occurred (0)
+/home/c/co58172/www/public_html/bitrix/modules/main/include.php:1
+#0: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog_before.php:19
+#1: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog.php:10
+#2: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/header.php:1
+#3: require(string)
+	/home/c/co58172/www/public_html/company/personal.php:8
+#4: include_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/urlrewrite.php:128
+#5: include_once(string)
+	/home/c/co58172/www/public_html/bitrix/urlrewrite.php:2
+----------
+
+OTUS - 2025-06-19 10:41:22 - HOST: co58172.tw1.ru - UNCAUGHT_EXCEPTION = [Error] 
+Class "App\Debug\Log" not found (0)
+/home/c/co58172/www/public_html/otus/debug.php:4
+----------
+
+OTUS - 2025-06-19 10:41:44 - HOST: co58172.tw1.ru - UNCAUGHT_EXCEPTION = [Error] 
+Class "App\Debug\Log" not found (0)
+/home/c/co58172/www/public_html/otus/debug.php:4
+----------
+
+OTUS - 2025-06-19 10:45:31 - HOST: co58172.tw1.ru - UNCAUGHT_EXCEPTION = [Error] 
+Class "App\Debug\Log" not found (0)
+/home/c/co58172/www/public_html/otus/debug.php:4
+----------
+
+OTUS - 2025-06-19 10:51:17 - HOST: co58172.tw1.ru - UNCAUGHT_EXCEPTION = [Error] 
+Class "App\Debug\FileExceptionHandlerLog" not found (0)
+/home/c/co58172/www/public_html/local/App/Debug/Log.php:8
+#0: require_once
+	/home/c/co58172/www/public_html/local/php_interface/init.php:4
+#1: include_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog_before.php:19
+#3: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog.php:10
+#4: require_once(string)
+	/home/c/co58172/www/public_html/bitrix/header.php:1
+#5: require(string)
+	/home/c/co58172/www/public_html/otus/debug.php:2
+----------
+
