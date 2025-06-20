@@ -17,23 +17,6 @@ String offset cast occurred (0)
 	/home/c/co58172/www/public_html/bitrix/urlrewrite.php:2
 ----------
 
-2025-06-19 10:21:12 - Host: co58172.tw1.ru - UNCAUGHT_EXCEPTION - [ErrorException] E_WARNING
-String offset cast occurred (0)
-/home/c/co58172/www/public_html/bitrix/modules/main/include.php:1
-#0: require_once(string)
-	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog_before.php:19
-#1: require_once(string)
-	/home/c/co58172/www/public_html/bitrix/modules/main/include/prolog.php:10
-#2: require_once(string)
-	/home/c/co58172/www/public_html/bitrix/header.php:1
-#3: require(string)
-	/home/c/co58172/www/public_html/company/personal.php:8
-#4: include_once(string)
-	/home/c/co58172/www/public_html/bitrix/modules/main/include/urlrewrite.php:128
-#5: include_once(string)
-	/home/c/co58172/www/public_html/bitrix/urlrewrite.php:2
-----------
-
 OTUS - 2025-06-19 10:22:59 - HOST: co58172.tw1.ru - UNCAUGHT_EXCEPTION = [ErrorException] E_WARNING
 String offset cast occurred (0)
 /home/c/co58172/www/public_html/bitrix/modules/main/include.php:1
