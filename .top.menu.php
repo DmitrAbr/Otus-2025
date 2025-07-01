@@ -8,8 +8,8 @@ $aMenuLinks = Array(
 		"CBXFeatures::IsFeatureEnabled('crm') && CModule::IncludeModule('crm') && CCrmPerms::IsAccessEnabled()" 
 	),
 	Array(
-		"Otus", 
-		"/otus/", 
+		"Гид сотрудника", 
+		"/gid-sotrudnika/", 
 		Array(), 
 		Array(), 
 		"" 

@@ -1,5 +1,31 @@
 <?php
-if(file_exists(__DIR__ . "/../App/Debug/Log.php"))
+
+/**
+ * - /local/php_interface/classes/{Path|raw}/{*|raw}.php
+ * - /local/php_interface/classes/{Path|ucfirst,lowercase}/{*|ucfirst,lowercase}.php
+ */
+
+
+/**
+ * Project bootstrap files
+ * Include
+ * 
+ */
+foreach( [
+	__DIR__.'/legacy.php',
+
+	__DIR__.'/classes/Otus/AbstractIblockPropertyValuesTable.php',
+
+	__DIR__.'/classes/Otus/List/DoctorTable.php',
+
+	__DIR__.'/classes/Otus/List/DoctorProcedureValuesProperty.php',
+	
+	]
+	as $filePath )
 {
-    require_once(__DIR__ . "/../App/Debug/Log.php");
+	if ( file_exists($filePath) )
+	{
+		require_once($filePath);
+	}
 }
+unset($filePath);

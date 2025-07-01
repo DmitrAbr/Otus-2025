@@ -48,6 +48,14 @@ $arUrlRewrite=array (
     'PATH' => '/bitrix/services/mobile/webcomponent.php',
     'SORT' => 100,
   ),
+  144 => 
+  array (
+    'CONDITION' => '#^/disk/boards/([0-9]+)/openAttachedDocument#',
+    'RULE' => 'action=disk.integration.flipchart.openAttachedDocument&attachedObjectId=$1',
+    'ID' => NULL,
+    'PATH' => '/bitrix/services/main/ajax.php',
+    'SORT' => 100,
+  ),
   1 => 
   array (
     'CONDITION' => '#^/pub/pay/([\\w\\W]+)/([0-9a-zA-Z]+)/([^/]*)#',
@@ -104,14 +112,6 @@ $arUrlRewrite=array (
     'PATH' => '/desktop_app/router.php',
     'SORT' => 100,
   ),
-  95 => 
-  array (
-    'CONDITION' => '#^/disk/boards/([0-9]+)/([0-9a-zA-Z]+)#',
-    'RULE' => 'action=disk.integration.flipchart.$2&fileId=$1',
-    'ID' => NULL,
-    'PATH' => '/bitrix/services/main/ajax.php',
-    'SORT' => 100,
-  ),
   10 => 
   array (
     'CONDITION' => '#^/video([\\.\\-0-9a-zA-Z]+)(/?)([^/]*)#',
@@ -136,6 +136,22 @@ $arUrlRewrite=array (
     'PATH' => '/timeman/login-history/index.php',
     'SORT' => 100,
   ),
+  145 => 
+  array (
+    'CONDITION' => '#^/disk/boards/([0-9]+)/openDocument#',
+    'RULE' => 'action=disk.integration.flipchart.openDocument&fileId=$1',
+    'ID' => NULL,
+    'PATH' => '/bitrix/services/main/ajax.php',
+    'SORT' => 100,
+  ),
+  146 => 
+  array (
+    'CONDITION' => '#^/disk/boards/([0-9]+)/openAttached#',
+    'RULE' => 'action=disk.integration.flipchart.openAttachedDocument&attachedObjectId=$1',
+    'ID' => NULL,
+    'PATH' => '/bitrix/services/main/ajax.php',
+    'SORT' => 100,
+  ),
   127 => 
   array (
     'CONDITION' => '#^/crm/configs/document_numerators/#',
@@ -158,6 +174,14 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => '',
     'PATH' => '/configs/userconsent.php',
+    'SORT' => 100,
+  ),
+  139 => 
+  array (
+    'CONDITION' => '#^/bi/dashboard/detail/([0-9]+)/#',
+    'RULE' => 'dashboardId=$1',
+    'ID' => 'bitrix:biconnector.apachesuperset.dashboard.detail',
+    'PATH' => '/bi/dashboard/detail/index.php',
     'SORT' => 100,
   ),
   17 => 
@@ -246,6 +270,22 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:crm.config.productprops',
     'PATH' => '/crm/configs/productprops/index.php',
+    'SORT' => 100,
+  ),
+  147 => 
+  array (
+    'CONDITION' => '#^/disk/boards/([0-9]+)/open#',
+    'RULE' => 'action=disk.integration.flipchart.openDocument&fileId=$1',
+    'ID' => NULL,
+    'PATH' => '/bitrix/services/main/ajax.php',
+    'SORT' => 100,
+  ),
+  148 => 
+  array (
+    'CONDITION' => '#^/vote-result/([0-9a-z\\.]+)#',
+    'RULE' => 'signedAttachId=$1',
+    'ID' => NULL,
+    'PATH' => '/vote-result/index.php',
     'SORT' => 100,
   ),
   26 => 
@@ -720,6 +760,14 @@ $arUrlRewrite=array (
     'PATH' => '/marketing/ads.php',
     'SORT' => 100,
   ),
+  142 => 
+  array (
+    'CONDITION' => '#^/bi/statistics/#',
+    'RULE' => '',
+    'ID' => 'bitrix:biconnector.apachesuperset.workspace_analytic.controller',
+    'PATH' => '/bi/statistics/index.php',
+    'SORT' => 100,
+  ),
   14 => 
   array (
     'CONDITION' => '#^/mobile/webdav#',
@@ -912,6 +960,14 @@ $arUrlRewrite=array (
     'PATH' => '/crm/button/index.php',
     'SORT' => 100,
   ),
+  140 => 
+  array (
+    'CONDITION' => '#^/bi/dataset/#',
+    'RULE' => '',
+    'ID' => 'bitrix:biconnector.apachesuperset.workspace_analytic.controller',
+    'PATH' => '/bi/dataset/index.php',
+    'SORT' => 100,
+  ),
   38 => 
   array (
     'CONDITION' => '#^/docs/sale/#',
@@ -934,6 +990,22 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:crm.quote',
     'PATH' => '/crm/quote/index.php',
+    'SORT' => 100,
+  ),
+  141 => 
+  array (
+    'CONDITION' => '#^/bi/source/#',
+    'RULE' => '',
+    'ID' => 'bitrix:biconnector.apachesuperset.workspace_analytic.controller',
+    'PATH' => '/bi/source/index.php',
+    'SORT' => 100,
+  ),
+  143 => 
+  array (
+    'CONDITION' => '#^/vibe/edit/#',
+    'RULE' => '',
+    'ID' => 'bitrix:landing.start',
+    'PATH' => '/vibe/edit/index.php',
     'SORT' => 100,
   ),
   36 => 
