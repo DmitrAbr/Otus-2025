@@ -6,6 +6,13 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Создание таблиц БД", 
+		"/otus/sozdanie-tablits-bd/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>
