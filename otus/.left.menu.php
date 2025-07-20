@@ -13,6 +13,20 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Вывод в грид", 
+		"/otus/vyvod-v-grid/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Текущий курс валют", 
+		"/otus/tekushchiy-kurs-valyut/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>

@@ -1,0 +1,45 @@
+2025-07-17 10:43:53 Array
+(
+    [sort] => Array
+        (
+            [ID] => desc
+        )
+
+    [vars] => Array
+        (
+            [by] => by
+            [order] => order
+        )
+
+)
+
+2025-07-17 10:44:08 Array
+(
+    [sort] => Array
+        (
+            [FIRST_NAME] => asc
+        )
+
+    [vars] => Array
+        (
+            [by] => by
+            [order] => order
+        )
+
+)
+
+2025-07-17 10:44:15 Array
+(
+    [sort] => Array
+        (
+            [LAST_NAME] => asc
+        )
+
+    [vars] => Array
+        (
+            [by] => by
+            [order] => order
+        )
+
+)
+

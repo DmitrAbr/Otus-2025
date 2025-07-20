@@ -1,31 +1,14 @@
-<?php
+<?
 
-/**
- * - /local/php_interface/classes/{Path|raw}/{*|raw}.php
- * - /local/php_interface/classes/{Path|ucfirst,lowercase}/{*|ucfirst,lowercase}.php
- */
+// автолоадер проекта
+include_once __DIR__ . '/../app/autoload.php';
 
-
-/**
- * Project bootstrap files
- * Include
- * 
- */
-foreach( [
-	__DIR__.'/legacy.php',
-
-	__DIR__.'/classes/Otus/AbstractIblockPropertyValuesTable.php',
-
-	__DIR__.'/classes/Otus/List/DoctorTable.php',
-
-	__DIR__.'/classes/Otus/List/DoctorProcedureValuesProperty.php',
-	
-	]
-	as $filePath )
-{
-	if ( file_exists($filePath) )
-	{
-		require_once($filePath);
-	}
+// вывод данных 
+function pr($var, $type = false) {
+    echo '<pre style="font-size:10px; border:1px solid #000; background:#FFF; text-align:left; color:#000;">';
+    if ($type)
+        var_dump($var);
+    else
+        print_r($var);
+    echo '</pre>';
 }
-unset($filePath);
