@@ -1,0 +1,3 @@
+<?
+$MESS['NAME_DESCRIPTION_SECTION'] = 'test';
+?>
