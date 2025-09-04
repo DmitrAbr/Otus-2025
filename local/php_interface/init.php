@@ -1,14 +1,55 @@
-<?
+<?php
 
-// автолоадер проекта
-include_once __DIR__ . '/../app/autoload.php';
+/**
+ * - /local/php_interface/classes/{Path|raw}/{*|raw}.php
+ * - /local/php_interface/classes/{Path|ucfirst,lowercase}/{*|ucfirst,lowercase}.php
+ */
 
-// вывод данных 
-function pr($var, $type = false) {
-    echo '<pre style="font-size:10px; border:1px solid #000; background:#FFF; text-align:left; color:#000;">';
-    if ($type)
-        var_dump($var);
-    else
-        print_r($var);
-    echo '</pre>';
+
+/**
+ * Project bootstrap files
+ * Include
+ * 
+ */
+ 
+
+ 
+foreach( [
+	__DIR__.'/legacy.php',
+	
+	__DIR__.'/constants.php',
+	
+	__DIR__.'/vendor/autoload.php',
+
+	__DIR__.'/classes/Otus/AbstractIblockPropertyValuesTable.php',
+
+	__DIR__.'/classes/Otus/List/DoctorTable.php',
+
+	__DIR__.'/classes/Otus/List/DoctorProcedureValuesProperty.php',
+	
+	__DIR__.'../js/sibcem/bizproc.task.crm/init/init.php',
+	
+	__DIR__.'/classes/Otus/List/BookTable.php',
+	
+	__DIR__.'/classes/Otus/List/AuthorTable.php',
+	
+	__DIR__.'/classes/Otus/List/ClientsTable.php',
+	
+	__DIR__.'/TaskClass.php',
+	
+	
+	
+	]
+	as $filePath )
+{
+	if ( file_exists($filePath) )
+	{
+		require_once($filePath);
+	}
 }
+
+require(__DIR__.'/autoload.php');
+
+require dirname(__FILE__) . '/events.php';
+
+unset($filePath);
