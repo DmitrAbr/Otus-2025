@@ -1,4 +1,5 @@
 <?php
+use Bitrix\Main\Page\Asset;
 
 /**
  * - /local/php_interface/classes/{Path|raw}/{*|raw}.php
@@ -48,8 +49,14 @@ foreach( [
 	}
 }
 
+
+
+unset($filePath);
+
 require(__DIR__.'/autoload.php');
 
 require dirname(__FILE__) . '/events.php';
 
-unset($filePath);
+//Asset::getInstance()->addJs($_SEVER["DOCUMENT_ROOT"] . "/local/js/otus/debug/script.js");
+\CJSCore::Init('otus.working_day');
+?>
