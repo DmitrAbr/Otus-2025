@@ -18,6 +18,15 @@ class CrmIblockUpdateHandler
 	protected const RESPONSIBLE_VALUE_ID = 146;
 	protected const DEAL_VALUE_ID = 147;
 	
+	/**
+	 * Handles update of Iblock element with ID equal to self::IBLOCK_ID
+	 * Updates deal in CRM with ID equal to $deal_id and sets opportunity with value equal to $sum_value
+	 * If deal is not found, throws exception with error message
+	 * If update of deal is not successful, throws exception with error message
+	 * If update of deal is successful, sends notification to user with ID equal to $modify_by with message "Сделка успешно обновлена"
+	 * @param array $arFields
+	 * @return bool
+	 */
 	public static function onUpdateIblockHandler(&$arFields)
 	{
 		Debug::writeToFile($arFields, "arFields", "local/arFields.log");
@@ -89,6 +98,16 @@ class CrmIblockUpdateHandler
 		}
 	}
 	
+
+/**
+ * Updates deal with given fields.
+ *
+ * @param array $CrmFields Deal fields to update.
+ * @param int $deal_id Deal ID.
+ * @param int $modify_by User ID that modified the deal.
+ *
+ * @return \Otus\OperationResult Result of the operation.
+ */
 	protected static function UpdateDeal($CrmFields, $deal_id, $modify_by)
 	{
 		if(Loader::IncludeModule("crm"))
@@ -124,6 +143,15 @@ class CrmIblockUpdateHandler
 		}
 	}
 	
+/**
+ * Handles update of Iblock element with ID equal to $deal_id
+ * Updates deal in CRM with ID equal to $deal_id and sets opportunity with value equal to $sum_value
+ * If deal is not found, throws exception with error message
+ * If update of deal is not successful, throws exception with error message
+ * If update of deal is successful, sends notification to user with ID equal to $modify_by with message "Сделка успешно обновлена"
+ * @param array $arFields
+ * @return bool
+ */
 	public static function onUpdateCrmHandler($arFields)
 	{
 		$deal_id = $arFields["ID"];
