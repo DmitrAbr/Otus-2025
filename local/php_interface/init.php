@@ -58,5 +58,5 @@ require(__DIR__.'/autoload.php');
 require dirname(__FILE__) . '/events.php';
 
 //Asset::getInstance()->addJs($_SEVER["DOCUMENT_ROOT"] . "/local/js/otus/debug/script.js");
-\CJSCore::Init('otus.working_day');
+//\CJSCore::Init('otus.working_day');
 ?>

@@ -12,4 +12,5 @@ $eventManager = \Bitrix\Main\EventManager::getInstance();
 //Вешаем обработчик на событие создания списка пользовательских свойств OnUserTypeBuildList
 $eventManager->addEventHandler('iblock', 'OnIblockPropertyBuildList', ['Sibcem\Userfield\IBLink', 'GetUserTypeDescription']);
 $eventManager->addEventHandler('iblock', 'OnIblockPropertyBuildList', ['Otus\Userfield\CUserTypeRecord', 'GetUserTypeDescription']);
-
+$eventManager->addEventHandler('iblock', 'OnBeforeIBlockElementUpdate', ['Otus\Handlers\CrmIblockUpdateHandler', 'onUpdateIblockHandler']);
+$eventManager->addEventHandler("crm", "OnAfterCrmDealUpdate", ['Otus\Handlers\CrmIblockUpdateHandler', 'onUpdateCrmHandler']);
