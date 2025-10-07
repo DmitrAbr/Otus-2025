@@ -13,10 +13,10 @@ use Bitrix\Iblock\Elements\ElementotuscrmiblockTable as IblockElement;
 class CrmIblockUpdateHandler
 {
 	
-	protected const IBLOCK_ID = 51;
-	protected const SUM_VALUE_ID = 148;
-	protected const RESPONSIBLE_VALUE_ID = 146;
-	protected const DEAL_VALUE_ID = 147;
+	protected const IBLOCK_ID = 52;
+	protected const SUM_VALUE_ID = 151;
+	protected const RESPONSIBLE_VALUE_ID = 149;
+	protected const DEAL_VALUE_ID = 150;
 	
 	/**
 	 * Handles update of Iblock element with ID equal to self::IBLOCK_ID
@@ -166,9 +166,9 @@ class CrmIblockUpdateHandler
 			if(!empty($element))
 			{
 				$PROP = [
-					148 => $arFields["OPPORTUNITY"]."|RUB",
-					146 => $arFields["ASSIGNED_BY_ID"],
-					147 => $deal_id
+					151 => $arFields["OPPORTUNITY"]."|RUB",
+					149 => $arFields["ASSIGNED_BY_ID"],
+					150 => $deal_id
 				];
 				
 				$el = new \CIBlockElement;
